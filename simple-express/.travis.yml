@@ -16,9 +16,9 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker build -t simple-express .
-  - docker tag simple-express sijoonlee/simple-express:latest
+  - docker tag simple-express chuongduong29/simple-express:latest
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push sijoonlee/simple-express
+  - docker push chuongduong29/simple-express
 

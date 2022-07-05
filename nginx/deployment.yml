@@ -15,7 +15,7 @@ spec:
                 service: reverseproxy
         spec:
             containers:
-            - image: sijoonlee/simple-reverse-proxy
+            - image: chuongduong29/simple-reverse-proxy
               name: reverseproxy
               resources:
                 requests:
